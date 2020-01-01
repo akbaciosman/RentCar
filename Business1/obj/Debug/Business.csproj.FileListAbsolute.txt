@@ -1,0 +1,2 @@
+C:\Users\osman.akbaci\source\repos\RentCar\Business1\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\osman.akbaci\source\repos\RentCar\Business1\obj\Debug\Business.csproj.CoreCompileInputs.cache

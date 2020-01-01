@@ -6114,7 +6114,8 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Core >= 1.0.0",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "System.ComponentModel.Annotations >= 4.7.0"
     ]
   },
   "packageFolders": {
@@ -6167,6 +6168,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           }
         },
         "imports": [
