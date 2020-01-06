@@ -11,11 +11,12 @@ namespace RentCar.Models
 {
     public class CarService : ICarService
     {
-        private ICarDal _carDal;
+        private readonly ICarDal _carDal;
 
-        public CarService()
+        public CarService(ICarDal carDal)
         {
-            _carDal = new CarDal();
+            _carDal = carDal;
+            //_carDal = new CarDal();
         }
         public bool Add(Car car)
         {

@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace RentCar.Models
+namespace RentCar.Entities.HelperConrete
 {
-    public class LoginView
+    public class Login
     {
         [Required]
         public string UserName { get; set; }

@@ -10,9 +10,9 @@ namespace RentCar.Models.Abstract
 {
     public interface ICarService
     {
-        bool Add(Car user);
-        bool Delete(int userId);
-        bool Update(Car user);
+        bool Add(Car car);
+        bool Delete(int carId);
+        bool Update(Car car);
         Car GetById(int carId);
         IList<Car> GetAll();
     }

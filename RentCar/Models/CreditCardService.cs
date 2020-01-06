@@ -11,11 +11,12 @@ namespace RentCar.Models
 {
     public class CreditCardService : ICreditCardService
     {
-        private ICreditCardDal _creditCardDal;
+        private readonly ICreditCardDal _creditCardDal;
 
-        public CreditCardService()
+        public CreditCardService(ICreditCardDal creditCardDal)
         {
-            _creditCardDal = new CreditCardDal();
+            _creditCardDal = creditCardDal;
+            //_creditCardDal = new CreditCardDal();
         }
         public bool Add(CreditCard Card)
         {

@@ -26,7 +26,7 @@ namespace RentCar.Core
                         throw new Exception("Can not insert data: " + msg);
                     }
                 }
-            };
+            }
         }
 
         public void Delete(TEntity entity)
@@ -50,16 +50,16 @@ namespace RentCar.Core
                         throw new Exception("Can not delete : " + msg);
                     }
                 }
-            };
+            }
         }
 
         public TEntity Get(System.Linq.Expressions.Expression<Func<TEntity, bool>> filter)
         {
 
             using (ISession _session = NHibernateHelper.OpenSession())
-            {     
+            {
                 return _session.Get<TEntity>(filter);
-            };
+            }
             
         }
 

@@ -11,11 +11,12 @@ namespace RentCar.Controllers
 {
     public class CarController : Controller
     {
-        private ICarService _carService;
+        private readonly ICarService _carService;
 
-        public CarController()
+        public CarController(ICarService carService)
         {
-            _carService = new CarService();
+            _carService = carService;
+            //_carService = new CarService();
         }
         // GET: Car
         public ActionResult Index()

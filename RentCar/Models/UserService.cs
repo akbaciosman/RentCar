@@ -12,10 +12,11 @@ namespace RentCar.Models
 {
     public class UserService : IUserService
     {
-        private IUserDal _userDal;
-        public UserService()
+        private readonly IUserDal _userDal;
+        public UserService(IUserDal userDal)
         {
-            _userDal = new UserDal();
+            _userDal = userDal;
+           // _userDal = new UserDal();
         }
         public bool Add(User user)
         {
@@ -65,6 +66,7 @@ namespace RentCar.Models
         {
             try
             {
+                Console.WriteLine(userId);
                 return _userDal.Get(u => u.Id == userId);
             }
             catch (Exception err)

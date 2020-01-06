@@ -10,11 +10,12 @@ namespace RentCar.Controllers
 {
     public class OrderController : Controller
     {
-        private IOrderService _orderService;
+        private readonly IOrderService _orderService;
 
-        public OrderController()
+        public OrderController(IOrderService orderService)
         {
-            _orderService = new OrderService();
+            _orderService = orderService;
+            //_orderService = new OrderService();
         }
         // GET: Order
         public ActionResult Index()

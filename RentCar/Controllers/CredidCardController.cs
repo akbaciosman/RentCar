@@ -13,9 +13,10 @@ namespace RentCar.Controllers
     {
         private ICreditCardService _creditCardService;
 
-        public CredidCardController()
+        public CredidCardController(ICreditCardService creditCardService)
         {
-            _creditCardService = new CreditCardService();
+            _creditCardService = creditCardService;
+            //_creditCardService = new CreditCardService();
         }
 
         // GET: CredidCard

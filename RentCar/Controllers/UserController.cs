@@ -13,9 +13,10 @@ namespace RentCar.Models
     {
         private IUserService _userService;
 
-        public UserController()
+        public UserController(IUserService userService)
         {
-            _userService = new UserService();
+            _userService = userService;
+           // _userService = new UserService();
         }
         // GET: User
         public ActionResult Index()
@@ -91,6 +92,7 @@ namespace RentCar.Models
         public ActionResult Delete(int id)
         {
             var user = _userService.GetById(id);
+            
             return View(user);
         }
 

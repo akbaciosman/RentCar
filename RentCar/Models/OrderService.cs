@@ -11,11 +11,12 @@ namespace RentCar.Models
 {
     public class OrderService : IOrderService
     {
-        private IOrderDal _orderDal;
+        private readonly IOrderDal _orderDal;
 
-        public OrderService()
+        public OrderService(IOrderDal orderDal)
         {
-            _orderDal = new OrderDal();
+            _orderDal = orderDal;
+            //_orderDal = new OrderDal();
         }
         public bool Add(Order Order)
         {
