@@ -36,6 +36,7 @@ namespace RentCar.Models
             {
 
                 var user = _userDal.Get(u => u.Id == userId);
+                user.IsDeleted=true;
                 _userDal.Delete(user);
                 return true;
             }

@@ -35,6 +35,7 @@ namespace RentCar.Models
             try
             {
                 CreditCard _card = _creditCardDal.Get(x => x.Id == id);
+                _card.IsDeleted = true;
                 _creditCardDal.Delete(_card);
                 return true;
             }

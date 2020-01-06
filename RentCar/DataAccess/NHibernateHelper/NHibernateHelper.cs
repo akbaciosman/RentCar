@@ -28,7 +28,7 @@ namespace RentCar
 
             FluentConfiguration _config = Fluently.Configure()
             .Database(MsSqlConfiguration.MsSql2008
-            .ConnectionString(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=RentCar;Integrated Security=True;")
+            .ConnectionString(connectionString)
             .ShowSql())
                 .Mappings(m =>
                 {
@@ -39,8 +39,8 @@ namespace RentCar
                     m.FluentMappings.AddFromAssemblyOf<AddressMapping>();
                 }).ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(true, true));
 
-                Console.WriteLine("----- " + _sessionFactory + " ----dsa dsadasd ");
-            Console.ReadLine();
+                Console.WriteLine("----- " + _sessionFactory + "  " + _config + " ----dsa dsadasd ");
+            
             _sessionFactory = _config.BuildSessionFactory();
                 return _sessionFactory ;
             

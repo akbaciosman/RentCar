@@ -17,6 +17,7 @@ namespace RentCar.Mappings
             Map(x => x.Photo).Not.Nullable();
             Map(x => x.Available).Nullable();
             Map(x => x.Price).Not.Nullable();
+            Map(x => x.IsDeleted).Nullable();
             Component(x => x.Address, m =>
             {
                 m.Map(x => x.City);

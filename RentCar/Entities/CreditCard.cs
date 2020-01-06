@@ -12,6 +12,7 @@ namespace RentCar.Entities
         public virtual string CardName { get; set; }
         public virtual User User { get; set; }
         public virtual double Limit { get; set; }
+        public virtual bool IsDeleted { get; set; }
 
     }
 }

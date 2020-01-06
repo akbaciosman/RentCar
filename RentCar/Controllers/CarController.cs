@@ -37,11 +37,25 @@ namespace RentCar.Controllers
 
         // POST: Car/Create
         [HttpPost]
-        public ActionResult Create(Car car)
+        public ActionResult Create(CarView car)
         {
             try
             {
-                _carService.Add(car);
+                Console.WriteLine(car.Photo.FileName);
+                if (car.Photo.ContentLength>0)
+                {
+                    //car.Photo.SaveAs(Server.MapPath("img//" + car.Photo.FileName));
+                    string uniqueFileName = Guid.NewGuid().ToString() + car.Photo.FileName;
+
+                    Car _car = new Car
+                    {
+                        Brand = car.Brand,
+                        Photo = uniqueFileName,
+                        Price = car.Price,
+                        Available = car.Available
+                    };
+                    _carService.Add(_car);
+                }
                 return RedirectToAction("Index");
             }
             catch

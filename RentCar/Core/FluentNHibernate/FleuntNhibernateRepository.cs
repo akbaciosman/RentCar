@@ -38,7 +38,8 @@ namespace RentCar.Core
 
                     try
                     {
-                        _session.Delete(entity);
+                        //_session.Delete(entity);
+                        _session.Update(entity);
                         _transaction.Commit();
                     }
                     catch (Exception msg)

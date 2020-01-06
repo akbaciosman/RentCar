@@ -12,8 +12,9 @@ namespace RentCar.Mappings
         public OrderMapping() {
             Table("Orders");
             Id(x => x.Id).GeneratedBy.Native();
-            Map(x => x.StartDate).Not.Nullable(); ;
-            Map(x => x.EndDate).Not.Nullable(); ;
+            Map(x => x.StartDate).Not.Nullable(); 
+            Map(x => x.EndDate).Not.Nullable();
+            Map(x => x.IsDeleted).Nullable();
             References(x => x.User);
             References(x => x.Car);
         }

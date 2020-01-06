@@ -1,4 +1,5 @@
-﻿using RentCar.Models.Abstract;
+﻿using RentCar.Models;
+using RentCar.Models.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,24 @@ namespace RentCar.Controllers
     public class OrderController : Controller
     {
         private IOrderService _orderService;
+
+        public OrderController()
+        {
+            _orderService = new OrderService();
+        }
         // GET: Order
         public ActionResult Index()
         {
             var orders = _orderService.GetAll();
+            return View(orders);
+        }// GET: Order
+
+        public ActionResult Index(int? userId)
+        {
+            if (userId == null)
+                throw new ArgumentNullException("Userid can not be null");
+            
+            var orders = _orderService.GetAll().Where (x=>x.User.Id == userId);
             return View(orders);
         }
 

@@ -67,6 +67,9 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
@@ -75,6 +78,12 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -142,6 +151,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\CredidCardController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
@@ -175,6 +186,8 @@
     <Compile Include="Models\Abstract\IUserService.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Models\CarService.cs" />
+    <Compile Include="Models\CarView.cs" />
+    <Compile Include="Models\LoginView.cs" />
     <Compile Include="Models\OrderService.cs" />
     <Compile Include="Models\CreditCardService.cs" />
     <Compile Include="Models\UserService.cs" />
@@ -214,7 +227,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\Details.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
@@ -226,7 +238,6 @@
     <Content Include="Views\Order\Delete.cshtml" />
     <Content Include="Views\Car\Index.cshtml" />
     <Content Include="Views\Car\Details.cshtml" />
-    <Content Include="Views\Car\Create.cshtml" />
     <Content Include="Views\Car\Edit.cshtml" />
     <Content Include="Views\Car\Delete.cshtml" />
     <Content Include="Views\CredidCard\Index.cshtml" />
@@ -234,9 +245,15 @@
     <Content Include="Views\CredidCard\Create.cshtml" />
     <Content Include="Views\CredidCard\Edit.cshtml" />
     <Content Include="Views\CredidCard\Delete.cshtml" />
+    <Content Include="Views\Shared\_CustomerLayout.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Car\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\" />
+    <Folder Include="Views\Authent\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

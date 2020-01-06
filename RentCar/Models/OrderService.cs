@@ -36,7 +36,7 @@ namespace RentCar.Models
             try
             {
                 Order _order = _orderDal.Get(x => x.Id == id);
-
+                _order.IsDeleted = true;
                 _orderDal.Delete(_order);
                 return true;
             }

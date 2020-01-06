@@ -18,7 +18,8 @@ namespace RentCar.Mappings
             Map(x => x.Surname).Not.Nullable().Length(100);
             Map(x => x.Password).Not.Nullable(); 
             Map(x => x.Age).Not.Nullable().Length(2);
-            Map(x => x.DriverLicence).Not.Nullable(); 
+            Map(x => x.DriverLicence).Not.Nullable();
+            Map(x => x.IsDeleted).Nullable();
             Map(x => x.PhoneNumber).Not.Nullable(); 
             Map(x => x.RoleId).Nullable();
             Map(x => x.Mail).Not.Nullable().Length(100);

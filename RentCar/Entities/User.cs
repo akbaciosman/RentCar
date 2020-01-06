@@ -17,6 +17,7 @@ namespace RentCar.Entities
         public virtual int Age { get; set; }
         public virtual bool DriverLicence { get; set; }
         public virtual int RoleId { get; set; }
+        public virtual bool IsDeleted { get; set; }
         public virtual IList<Order> Orders { get; set; }
         public virtual IList<CreditCard> Cards { get; set; }
 

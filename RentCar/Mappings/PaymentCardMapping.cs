@@ -15,6 +15,7 @@ namespace RentCar.Mappings
             Id(x => x.Id).GeneratedBy.Native();
             Map(x => x.Limit).Not.Nullable();
             Map(x => x.CardName).Not.Nullable();
+            Map(x => x.IsDeleted).Nullable();
             References(x => x.User);
         }
     }

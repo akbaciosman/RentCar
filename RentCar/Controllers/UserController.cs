@@ -25,8 +25,8 @@ namespace RentCar.Models
             return View(users);
         }
 
-        // GET: User/Details/5
-        public ActionResult Details(int id)
+            // GET: User/Details/5
+            public ActionResult Details(int id)
         {/*
             using (var session=NHibernateHelper.OpenSession()) {
                 using (var transac = session.BeginTransaction())

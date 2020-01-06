@@ -35,6 +35,7 @@ namespace RentCar.Models
             try
             {
                 Car _car = _carDal.Get(x => x.Id == userId);
+                _car.IsDeleted = true;
                 _carDal.Delete(_car);
                 return true;
             }
