@@ -12,23 +12,45 @@ namespace RentCar.Models
     public class OrderService : IOrderService
     {
         private readonly IOrderDal _orderDal;
+        private readonly ICarDal _carDal;
+        private readonly IUserDal _userDal;
 
-        public OrderService(IOrderDal orderDal)
+        public OrderService(IOrderDal orderDal, ICarDal carDal, IUserDal userDal)
         {
             _orderDal = orderDal;
+            _carDal = carDal;
+            _userDal = userDal;
             //_orderDal = new OrderDal();
         }
         public bool Add(Order Order)
         {
             try
             {
-                _orderDal.Add(Order);
+                User _user = _userDal.Get(x => x.Id == Order.User.Id);
+                Car _car = _carDal.Get(x => x.Id == Order.Car.Id);
 
+                if (_car.Available && !_car.IsDeleted)
+                {
+                    if (_user.Cards[0].Limit > _car.Price)
+                    {
+                        _user.Cards[0].Limit -= _car.Price; 
+                        Order.User = _user;
+                        Order.Car = _car;
+                        Order.Car.Available = false;
+
+                        _orderDal.Add(Order);
+                    }
+                    else
+                        throw new Exception("You cant rent this, please check your creditCard Limit!!");
+                }
+                else {
+                    throw new Exception("Related Car is not available for now!!!, Please choose new one");
+                }
                 return true;
             }
-            catch (Exception)
+            catch (Exception msg)
             {
-                return false;
+                throw new Exception("Can not order " + msg);
             }
         }
 
@@ -51,9 +73,10 @@ namespace RentCar.Models
         {
             try
             {
-                return _orderDal.GetList();
+                List<Order> list = _orderDal.GetList().ToList();
+                return list;
             }
-            catch (Exception)
+            catch (Exception msg)
             {
                 return null;
             }

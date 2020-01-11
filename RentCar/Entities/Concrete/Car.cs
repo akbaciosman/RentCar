@@ -16,5 +16,11 @@ namespace RentCar.Entities
         public virtual double Price { get; set; }
         public virtual Address Address { get; set; }
         public virtual IList<Order> Orders { get; set; }
+
+        public Car()
+        {
+            Orders = new List<Order>();
+            Address = new Address();
+        }
     }
 }

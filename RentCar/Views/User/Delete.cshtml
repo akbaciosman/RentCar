@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "Delete";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Delete</h2>
@@ -28,13 +28,6 @@
             @Html.DisplayFor(model => model.SecondName)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Password)
-        </dd>
 
         <dt>
             @Html.DisplayNameFor(model => model.PhoneNumber)
@@ -53,11 +46,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DriverLicence)
+            @Html.DisplayNameFor(model => model.DriverLicense)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DriverLicence)
+            @Html.DisplayFor(model => model.DriverLicense)
         </dd>
 
         <dt>

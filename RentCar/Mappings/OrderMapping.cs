@@ -15,8 +15,8 @@ namespace RentCar.Mappings
             Map(x => x.StartDate).Not.Nullable(); 
             Map(x => x.EndDate).Not.Nullable();
             Map(x => x.IsDeleted).Nullable();
-            References(x => x.User);
-            References(x => x.Car);
+            References<User>(x => x.User).Column("UserId").Cascade.All().Not.LazyLoad();
+            References<Car>(x => x.Car).Column("CarId").Cascade.All().Not.LazyLoad();
         }
     }
 }

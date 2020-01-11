@@ -158,10 +158,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\CarController.cs" />
-    <Compile Include="Controllers\CredidCardController.cs" />
+    <Compile Include="Controllers\CreditCardController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Core\Abstract\IEntityRepository.cs" />
     <Compile Include="Core\FluentNHibernate\FleuntNhibernateRepository.cs" />
     <Compile Include="DataAccess\Abstract\ICarDal.cs" />
@@ -188,13 +190,11 @@
     <Compile Include="Mappings\OrderMapping.cs" />
     <Compile Include="Mappings\PaymentCardMapping.cs" />
     <Compile Include="Mappings\UserMapping.cs" />
-    <Compile Include="Models\Abstract\IAuthService.cs" />
     <Compile Include="Models\Abstract\ICarService.cs" />
     <Compile Include="Models\Abstract\IOrderService.cs" />
     <Compile Include="Models\Abstract\ICreditCardService.cs" />
     <Compile Include="Models\Abstract\IUserService.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="Models\AuthService.cs" />
     <Compile Include="Models\CarService.cs" />
     <Compile Include="Entities\HelperConrete\CarView.cs" />
     <Compile Include="Models\OrderService.cs" />
@@ -208,6 +208,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\login.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -224,6 +225,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\login.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -245,24 +247,27 @@
     <Content Include="Views\Car\Details.cshtml" />
     <Content Include="Views\Car\Edit.cshtml" />
     <Content Include="Views\Car\Delete.cshtml" />
-    <Content Include="Views\CredidCard\Index.cshtml" />
-    <Content Include="Views\CredidCard\Details.cshtml" />
-    <Content Include="Views\CredidCard\Create.cshtml" />
-    <Content Include="Views\CredidCard\Edit.cshtml" />
-    <Content Include="Views\CredidCard\Delete.cshtml" />
-    <Content Include="Views\Shared\_CustomerLayout.cshtml" />
-    <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Car\Create.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Details.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\User\Delete.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Shared\_PartialCustomerView.cshtml" />
+    <Content Include="Views\Shared\_PartialAdminView.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Register\Register.cshtml" />
+    <Content Include="Views\CreditCard\Index.cshtml" />
+    <Content Include="Views\CreditCard\Details.cshtml" />
+    <Content Include="Views\CreditCard\Create.cshtml" />
+    <Content Include="Views\CreditCard\Edit.cshtml" />
+    <Content Include="Views\CreditCard\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="img\" />
-    <Folder Include="Views\Authent\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

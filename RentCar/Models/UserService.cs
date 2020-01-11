@@ -2,11 +2,15 @@
 using RentCar.DataAccess.Abstract;
 using RentCar.Entities;
 using RentCar.Entities.Abstract;
+using RentCar.Entities.HelperConrete;
 using RentCar.Models.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
+using System.Web.Http;
 
 namespace RentCar.Models
 {
@@ -22,6 +26,7 @@ namespace RentCar.Models
         {
             try
             {
+
                 _userDal.Add(user);
                 return true;
             }
@@ -87,6 +92,64 @@ namespace RentCar.Models
                 return false;
             }
             
+        }
+
+        public User LoginFunc(Login loginDto)
+        {
+            User user = _userDal.Get(u => u.Email == loginDto.UserName);
+            if(user!=null)
+                if (user.Email == loginDto.UserName && user.Password == GetMD5(loginDto.Password) && user.IsDeleted!=true)
+                    return user;
+            return null;
+
+
+        }
+
+
+        public User RegisterFunc(Register registerDto)
+        {
+            User user = new User{
+                FirstName = registerDto.FirstName,
+                SecondName = registerDto.SecondName,
+              /*  Password = GetMD5(registerDto.Password),
+                Email = registerDto.Email,
+                Age = registerDto.Age,
+                PhoneNumber = registerDto.PhoneNumber,
+                DriverLicense = registerDto.DriverLicense,
+                IsDeleted = false,
+                RoleId = 1*/
+            };
+
+            try
+            {
+                _userDal.Add(user);
+
+            }
+            catch (Exception msg)
+            {
+
+                return null;
+            }
+            
+            return user;
+        }
+
+
+        private string GetMD5(string text)
+        {
+            UnicodeEncoding UE = new UnicodeEncoding();
+            byte[] hashValue;
+            byte[] message = UE.GetBytes(text);
+
+            MD5 hashString = new MD5CryptoServiceProvider();
+            string hex = "";
+
+            hashValue = hashString.ComputeHash(message);
+            foreach (byte x in hashValue)
+            {
+                hex += String.Format("{0:x2}", x);
+            }
+            return hex;
         }
     }
 }

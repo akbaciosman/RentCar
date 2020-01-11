@@ -12,6 +12,13 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.Car.Photo)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/img/"+Model.Car.Photo)" style="width:200px;height:200px;" alt="IMAGES" />
+        </dd>
+        <dt>
             @Html.DisplayNameFor(model => model.StartDate)
         </dt>
 
@@ -27,6 +34,18 @@
             @Html.DisplayFor(model => model.EndDate)
         </dd>
 
+        <dt>
+            @Html.DisplayFor(model => model.User.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.User.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayFor(model => model.User.SecondName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.User.SecondName)
+        </dd>
     </dl>
 
     @using (Html.BeginForm()) {

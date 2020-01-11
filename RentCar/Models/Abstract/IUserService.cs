@@ -1,5 +1,6 @@
 ﻿using RentCar.Entities;
 using RentCar.Entities.Abstract;
+using RentCar.Entities.HelperConrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,7 @@ namespace RentCar.Models.Abstract
         bool Update(User user);
         User GetById(int userId);
         IList<User> GetAll();
+        User LoginFunc(Login loginDto);
+        User RegisterFunc(Register registerDto);
     }
 }

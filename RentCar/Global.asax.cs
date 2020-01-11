@@ -23,7 +23,7 @@ namespace RentCar
 
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
 
-            builder.RegisterType<AuthService>().As<IAuthService>();
+            builder.RegisterType<CarService>().As<ICarService>();
             builder.RegisterType<CarDal>().As<ICarDal>();
 
             builder.RegisterType<UserService>().As<IUserService>();

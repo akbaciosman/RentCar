@@ -11,8 +11,8 @@ namespace RentCar.Mappings
     {
         public AddressMapping()
         {
-            Map(x => x.City).Not.Nullable(); 
-            Map(x => x.Disrict).Not.Nullable(); 
+            Map(x => x.City).Not.Nullable().Not.LazyLoad(); 
+            Map(x => x.Disrict).Not.Nullable().Not.LazyLoad(); 
         }
     }
 }

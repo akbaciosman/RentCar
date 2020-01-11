@@ -21,6 +21,12 @@ namespace RentCar.Controllers
         // GET: Car
         public ActionResult Index()
         {
+            if (Session["LoginedUser"] == null)
+                return RedirectToAction(actionName: "Login", controllerName: "Login");
+            if (string.IsNullOrEmpty(Session["LoginedUser"].ToString()))
+                return RedirectToAction(actionName: "Login", controllerName: "Login");
+
+            //return View(_carService.GetAll().Where(x=>x.IsDeleted !=true));
             return View(_carService.GetAll());
         }
 
@@ -45,22 +51,25 @@ namespace RentCar.Controllers
                 Console.WriteLine(car.Photo.FileName);
                 if (car.Photo.ContentLength>0)
                 {
-                    //car.Photo.SaveAs(Server.MapPath("img//" + car.Photo.FileName));
                     string uniqueFileName = Guid.NewGuid().ToString() + car.Photo.FileName;
+                    car.Photo.SaveAs(Server.MapPath("~/img/" + uniqueFileName));
+                    
 
                     Car _car = new Car
                     {
                         Brand = car.Brand,
                         Photo = uniqueFileName,
                         Price = car.Price,
-                        Available = car.Available
+                        Available = car.Available,
+                        Address = new Address {City =car.Address.City,Disrict =car.Address.Disrict }
                     };
                     _carService.Add(_car);
                 }
                 return RedirectToAction("Index");
             }
-            catch
+            catch(Exception msg)
             {
+                Console.WriteLine(msg);
                 return View();
             }
         }
@@ -68,22 +77,29 @@ namespace RentCar.Controllers
         // GET: Car/Edit/5
         public ActionResult Edit(int id)
         {
-
-            return View();
+            return View(_carService.GetById(id));
         }
 
         // POST: Car/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, Car car)
         {
             try
             {
-                var _car = _carService.GetById(id);
+
+                Car _car = _carService.GetById(id);
+
+                _car.Price = car.Price;
+                _car.Available = car.Available;
+                _car.Address.City= car.Address.City;
+                _car.Address.Disrict = car.Address.Disrict;
+                _car.IsDeleted = car.IsDeleted;
                 _carService.Update(_car);
                 return RedirectToAction("Index");
             }
-            catch
+            catch(Exception msg)
             {
+                ModelState.AddModelError("Something got wrong!!", msg);
                 return View();
             }
         }
@@ -91,7 +107,8 @@ namespace RentCar.Controllers
         // GET: Car/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            Car _car = _carService.GetById(id);
+            return View(_car);
         }
 
         // POST: Car/Delete/5
@@ -100,7 +117,8 @@ namespace RentCar.Controllers
         {
             try
             {
-                _carService.Delete(id);                
+                if(ModelState.IsValid)
+                    _carService.Delete(id);                
                 return RedirectToAction("Index");
             }
             catch

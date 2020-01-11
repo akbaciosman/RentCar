@@ -18,14 +18,14 @@ namespace RentCar.Mappings
             Map(x => x.SecondName).Not.Nullable().Length(100);
             Map(x => x.Password).Not.Nullable(); 
             Map(x => x.Age).Not.Nullable().Length(2);
-            Map(x => x.DriverLicence).Not.Nullable();
+            Map(x => x.DriverLicense).Not.Nullable();
             Map(x => x.IsDeleted).Nullable();
             Map(x => x.PhoneNumber).Not.Nullable(); 
             Map(x => x.RoleId).Nullable();
-            Map(x => x.Email).Not.Nullable().Length(50);
-            HasMany(x => x.Orders).Inverse().Cascade.All();
-            HasMany(x => x.Cards).Inverse().Cascade.All();
-            
+            Map(x => x.Email).Not.Nullable().Length(50).Unique();
+            HasMany(x => x.Orders).Inverse().Cascade.All().KeyColumn("UserId").Not.LazyLoad(); 
+            HasMany(x => x.Cards).Inverse().Cascade.All().KeyColumn("UserId").Not.LazyLoad();
+
         }
     }
 }

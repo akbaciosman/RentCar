@@ -40,7 +40,7 @@ namespace RentCar.Models
                 _creditCardDal.Delete(_card);
                 return true;
             }
-            catch (Exception)
+            catch (Exception msg)
             {
                 return false;
             }

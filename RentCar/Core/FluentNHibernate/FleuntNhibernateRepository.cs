@@ -58,7 +58,7 @@ namespace RentCar.Core
 
             using (ISession _session = NHibernateHelper.OpenSession())
             {
-                return _session.Get<TEntity>(filter);
+                return _session.Query<TEntity>().FirstOrDefault(filter);
             }
             
         }
@@ -67,7 +67,6 @@ namespace RentCar.Core
         {
             using (ISession _session = NHibernateHelper.OpenSession())
             {
-              
                 return _session.Query<TEntity>().ToList(); 
 
             }

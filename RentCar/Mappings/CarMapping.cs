@@ -23,7 +23,7 @@ namespace RentCar.Mappings
                 m.Map(x => x.City);
                 m.Map(x => x.Disrict);
             });
-            HasMany(x => x.Orders).Inverse().Cascade.All();
+            HasMany(x => x.Orders).Inverse().Cascade.All().KeyColumn("CarId").Not.LazyLoad();
         }
     }
 }

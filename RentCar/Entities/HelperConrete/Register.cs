@@ -1,29 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
+
 
 namespace RentCar.Entities.HelperConrete
 {
     public class Register
     {
         [Required]
-        public string UserName { get; set; }
+        [RegularExpression(@"([a-zA-Z\d]+[\w\d]*|)[a-zA-Z]+[\w\d.]*", ErrorMessage = "Invalid username")]
+        public string FirstName { get; set; }
+        [Required]
+        public string SecondName { get; set; }
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
         [Required]
-        public string Name { get; set; }
-        [Required]
-        public string Surname { get; set; }
-        [Required]
         public string PhoneNumber { get; set; }
         [Required]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
         public string Email { get; set; }
         [Required]
+        [Range(20, 30)]
         public int Age { get; set; }
         [Required]
-        public bool DriverLicence { get; set; }
+        public bool DriverLicense { get; set; }
     }
 }

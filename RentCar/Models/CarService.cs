@@ -31,12 +31,13 @@ namespace RentCar.Models
             }
         }
 
-        public bool Delete(int userId)
+        public bool Delete(int carId)
         {
             try
             {
-                Car _car = _carDal.Get(x => x.Id == userId);
+                Car _car = _carDal.Get(x => x.Id == carId);
                 _car.IsDeleted = true;
+                _car.Available = false;
                 _carDal.Delete(_car);
                 return true;
             }
@@ -62,23 +63,23 @@ namespace RentCar.Models
         {
             try
             {
-                return _carDal.Get(x => x.Id == carId); ;
+                return _carDal.Get(x => x.Id == carId); 
             }
-            catch (Exception)
+            catch (Exception msg)
             {
                 return null;
             }
 
         }
 
-        public bool Update(Car user)
+        public bool Update(Car car)
         {
             try
             {
-                _carDal.Update(user);
+                _carDal.Update(car);
                 return true;
             }
-            catch (Exception)
+            catch (Exception msg)
             {
                 return false;
             }

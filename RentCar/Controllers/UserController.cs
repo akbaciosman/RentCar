@@ -21,6 +21,11 @@ namespace RentCar.Models
         // GET: User
         public ActionResult Index()
         {
+            if (Session["LoginedUser"] == null)
+                return RedirectToAction(actionName: "Login", controllerName: "Login");
+            if (string.IsNullOrEmpty(Session["LoginedUser"].ToString()))
+                return RedirectToAction(actionName: "Login", controllerName: "Login");
+
             var users = _userService.GetAll();
             
             return View(users);
@@ -28,17 +33,7 @@ namespace RentCar.Models
 
             // GET: User/Details/5
             public ActionResult Details(int id)
-        {/*
-            using (var session=NHibernateHelper.OpenSession()) {
-                using (var transac = session.BeginTransaction())
-                {
-                    var result = session.Get<User>(id);
-                    return View(result);
-                }*/
-           /* User user = new User {Name="Osman",Surname ="veli",Age=15,DriverLicence=true,Id=20,PhoneNumber="20550",RoleId=1,
-                Password="sdsds5",Mail="osman.akbaci"};
-                */
-
+        {
             var user = _userService.GetById(id);
             return View(user);
         }
@@ -79,7 +74,15 @@ namespace RentCar.Models
         {
             try
             {
-                _userService.Update(user);
+                User _user = _userService.GetById(id);
+                _user.FirstName = user.FirstName;
+                _user.SecondName = user.SecondName;
+                _user.Email = user.Email;
+                _user.IsDeleted = user.IsDeleted;
+                _user.PhoneNumber = user.PhoneNumber;
+                _user.RoleId = user.RoleId;
+                _user.Age = user.Age;
+                _userService.Update(_user);
                 return RedirectToAction("Index");
             }
             catch
