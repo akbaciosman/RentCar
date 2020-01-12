@@ -1,4 +1,5 @@
 ﻿
+using RentCar.Core;
 using RentCar.Entities.HelperConrete;
 using RentCar.Models.Abstract;
 using System.Web.Mvc;
@@ -23,13 +24,21 @@ namespace RentCar.Controllers
         [HttpPost]
         public ActionResult Register(Register register)
         {
-            
-            if (_userService.RegisterFunc(register) != null)
-                   return RedirectToAction(actionName: "Index", controllerName: "Home");
+            try
+            {
+                if (_userService.RegisterFunc(register) != null)
+                    return RedirectToAction(actionName: "Index", controllerName: "Home");
+            }
+            catch (System.Exception err)
+            {
 
-            
-            ModelState.AddModelError("","Username : " + register.Email +  " already exist, please login the Page!!");
-                return RedirectToAction(actionName:"Login" , controllerName: "Login");
+                Logger.GetLogger().Error("User can not be added!!!", err);
+                ModelState.AddModelError("", "Username : " + register.Email + " already exist, please login the Page!!");
+                return RedirectToAction(actionName: "Login", controllerName: "Login");
+            }
+
+
+            return RedirectToAction(actionName: "Login", controllerName: "Login");
         }
     }
 }

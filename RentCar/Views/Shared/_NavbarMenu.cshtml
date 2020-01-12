@@ -1,0 +1,39 @@
+﻿@{
+
+    string[] userTemp = Session["LoginedUser"].ToString().Split(',');
+    if (userTemp.Count() < 2)
+    {
+        Response.Redirect("/Login/Login");
+        return;
+    }
+
+    string name = userTemp[2];
+    int userId = int.Parse(userTemp[0]);
+}
+<ul class="nav navbar-nav navbar-right">
+    <li class="btn-group nav">
+        <button type="button" class="btn navbar-btn" style="background-color:forestgreen">@name</button>
+        <button type="button" class="btn navbar-btn dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li>@Html.ActionLink("My Account", "Details", "User", new { Id = userId }, null)</li>
+            <li>@Html.ActionLink("Edit Profile", "Edit", "User", new { Id = userId }, null)</li>
+            <li>@Html.ActionLink("Change Password", "ChangePassword", "User", new { Id = userId }, null)</li>
+        </ul>
+    </li>
+</ul>
+<div class="nav navbar-nav navbar-right">
+    @using (Html.BeginForm("LogOut", "Login", FormMethod.Post, new { id = "logoutForm" }))
+    {
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="javascript:document.getElementById('logoutForm').submit()">
+                    Log off
+                    <span class="glyphicon glyphicon-log-out"></span>
+                </a>
+            </li>
+        </ul>
+    }
+</div>

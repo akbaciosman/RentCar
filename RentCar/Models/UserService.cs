@@ -111,13 +111,13 @@ namespace RentCar.Models
             User user = new User{
                 FirstName = registerDto.FirstName,
                 SecondName = registerDto.SecondName,
-              /*  Password = GetMD5(registerDto.Password),
+                Password = GetMD5(registerDto.Password),
                 Email = registerDto.Email,
                 Age = registerDto.Age,
                 PhoneNumber = registerDto.PhoneNumber,
                 DriverLicense = registerDto.DriverLicense,
                 IsDeleted = false,
-                RoleId = 1*/
+                RoleId = 1
             };
 
             try
@@ -135,7 +135,7 @@ namespace RentCar.Models
         }
 
 
-        private string GetMD5(string text)
+        public string GetMD5(string text)
         {
             UnicodeEncoding UE = new UnicodeEncoding();
             byte[] hashValue;

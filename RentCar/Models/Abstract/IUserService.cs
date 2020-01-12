@@ -18,5 +18,6 @@ namespace RentCar.Models.Abstract
         IList<User> GetAll();
         User LoginFunc(Login loginDto);
         User RegisterFunc(Register registerDto);
+        string GetMD5(string text);
     }
 }

@@ -1,4 +1,5 @@
-﻿using RentCar.Entities;
+﻿using RentCar.Core;
+using RentCar.Entities;
 using RentCar.Models;
 using RentCar.Models.Abstract;
 using System;
@@ -43,6 +44,8 @@ namespace RentCar.Controllers
                 }
                 else if (result1 == true && result2 == true && _roleId == 2) //Admin 
                     orders = _orderService.GetAll().ToList();
+                else
+                    Logger.GetLogger().Error("User is not registered!!");
             }
 
             return View(orders);
@@ -88,6 +91,7 @@ namespace RentCar.Controllers
             }
             catch(Exception msg)
             {
+                Logger.GetLogger().Error("Order was not added",msg);
                 ModelState.AddModelError("Order was not added!!",msg);
                 return View();
             }
@@ -113,6 +117,7 @@ namespace RentCar.Controllers
             }
             catch(Exception msg)
             {
+                Logger.GetLogger().Error("Order was not edited", msg);
                 ModelState.AddModelError("Order was not edited!!" ,msg);
                 return View();
             }

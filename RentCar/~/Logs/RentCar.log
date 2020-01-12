@@ -1,0 +1,802 @@
+2020-01-12 16:37:42,896 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,905 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,905 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,905 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,905 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 9 ms
+2020-01-12 16:37:42,905 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,905 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,905 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,907 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,907 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#1006]] in any result-set context
+2020-01-12 16:37:42,907 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#1006]] not located in load context
+2020-01-12 16:37:42,907 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#1006]>@29e39a8]
+2020-01-12 16:37:42,907 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,907 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#1006]>@29e39a8]
+2020-01-12 16:37:42,907 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Cards#1006]
+2020-01-12 16:37:42,907 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,907 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,907 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,907 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,907 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,908 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,908 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,908 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,908 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=?
+2020-01-12 16:37:42,908 DEBUG NHibernate.Type.Int32Type - binding '1006' to parameter: 0
+2020-01-12 16:37:42,908 DEBUG NHibernate.SQL - SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=@p0;@p0 = 1006 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,908 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,910 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+2020-01-12 16:37:42,910 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,910 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Orders#1006]]
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#1006]] in any result-set context
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#1006]] located in load context
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,910 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,910 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,910 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,910 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 2 ms
+2020-01-12 16:37:42,910 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,910 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,910 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,910 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#1006]] in any result-set context
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#1006]] not located in load context
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#1006]>@3996c84]
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#1006]>@3996c84]
+2020-01-12 16:37:42,910 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,911 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,911 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,911 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,911 DEBUG NHibernate.AdoNet.ConnectionManager - After autocommit
+2020-01-12 16:37:42,911 DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2020-01-12 16:37:42,911 DEBUG NHibernate.Impl.SessionImpl - [session-id=3d12ed4f-9b00-410d-afff-28d1d8b1df85] running ISession.Dispose()
+2020-01-12 16:37:42,912 DEBUG NHibernate.Impl.SessionImpl - [session-id=3d12ed4f-9b00-410d-afff-28d1d8b1df85] executing real Dispose(True)
+2020-01-12 16:37:42,912 DEBUG NHibernate.Impl.SessionImpl - closing session
+2020-01-12 16:37:42,912 DEBUG NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+2020-01-12 16:37:42,913 DEBUG NHibernate.Impl.SessionFactoryImpl+SessionBuilderImpl`1[[NHibernate.ISessionBuilder, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4]] - Opening Hibernate Session.
+2020-01-12 16:37:42,913 DEBUG NHibernate.Impl.SessionImpl - [session-id=362b87db-b57b-4c06-82c1-73edf01f6f59] opened session at timestamp: 637144438629, for session factory: [/8babe7443140408abd033a2abe2e1cb9]
+2020-01-12 16:37:42,914 DEBUG NHibernate.Transaction.AdoTransaction - Begin (Unspecified)
+2020-01-12 16:37:42,914 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,916 DEBUG NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - updating detached instance
+2020-01-12 16:37:42,918 DEBUG NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - updating [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,922 DEBUG NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - updating [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,923 INFO NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: RentCar.Entities.User
+2020-01-12 16:37:42,926 INFO NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,927 INFO NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,927 INFO NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,927 INFO NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,927 INFO NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: RentCar.Entities.User
+2020-01-12 16:37:42,928 DEBUG NHibernate.Transaction.AdoTransaction - Start Commit
+2020-01-12 16:37:42,928 DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2020-01-12 16:37:42,931 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - flushing session
+2020-01-12 16:37:42,931 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - processing flush-time cascades
+2020-01-12 16:37:42,931 INFO NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: RentCar.Entities.User
+2020-01-12 16:37:42,931 INFO NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,932 INFO NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,932 INFO NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,932 INFO NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,932 INFO NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: RentCar.Entities.User
+2020-01-12 16:37:42,932 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - dirty checking collections
+2020-01-12 16:37:42,933 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - Flushing entities and processing referenced collections
+2020-01-12 16:37:42,938 DEBUG NHibernate.Event.Default.DefaultFlushEntityEventListener - Updating entity: [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,941 DEBUG NHibernate.Engine.Collections - Collection found: [RentCar.Entities.User.Orders#1006], was: [RentCar.Entities.User.Orders#1006] (initialized)
+2020-01-12 16:37:42,942 DEBUG NHibernate.Engine.Collections - Collection found: [RentCar.Entities.User.Cards#1006], was: [RentCar.Entities.User.Cards#1006] (initialized)
+2020-01-12 16:37:42,945 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - Processing unreferenced collections
+2020-01-12 16:37:42,945 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - Scheduling collection removes/(re)creates/updates
+2020-01-12 16:37:42,945 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+2020-01-12 16:37:42,945 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+2020-01-12 16:37:42,946 DEBUG NHibernate.Impl.Printer - listing entities:
+2020-01-12 16:37:42,947 DEBUG NHibernate.Impl.Printer - RentCar.Entities.User{'Id'='1006', 'Orders'='[]', 'Cards'='[]', 'FirstName'='dsadsa', 'SecondName'='dasdas', 'Password'='5250b70a85a1812e9384e99eaf15ed9c', 'Age'='62', 'DriverLicense'='True', 'IsDeleted'='False', 'PhoneNumber'='dasdas', 'RoleId'='1', 'Email'='dasas'}
+2020-01-12 16:37:42,947 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - executing flush
+2020-01-12 16:37:42,948 DEBUG NHibernate.AdoNet.ConnectionManager - Registering flush begin
+2020-01-12 16:37:42,954 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Updating entity: [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,955 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,955 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: UPDATE Users SET FirstName = ?, SecondName = ?, Password = ?, Age = ?, DriverLicense = ?, IsDeleted = ?, PhoneNumber = ?, RoleId = ?, Email = ? WHERE Id = ?
+2020-01-12 16:37:42,955 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Dehydrating entity: [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,956 DEBUG NHibernate.Type.StringType - binding 'dsadsa' to parameter: 0
+2020-01-12 16:37:42,956 DEBUG NHibernate.Type.StringType - binding 'dasdas' to parameter: 1
+2020-01-12 16:37:42,956 DEBUG NHibernate.Type.StringType - binding '5250b70a85a1812e9384e99eaf15ed9c' to parameter: 2
+2020-01-12 16:37:42,956 DEBUG NHibernate.Type.Int32Type - binding '62' to parameter: 3
+2020-01-12 16:37:42,956 DEBUG NHibernate.Type.BooleanType - binding 'True' to parameter: 4
+2020-01-12 16:37:42,957 DEBUG NHibernate.Type.BooleanType - binding 'False' to parameter: 5
+2020-01-12 16:37:42,957 DEBUG NHibernate.Type.StringType - binding 'dasdas' to parameter: 6
+2020-01-12 16:37:42,957 DEBUG NHibernate.Type.Int32Type - binding '1' to parameter: 7
+2020-01-12 16:37:42,957 DEBUG NHibernate.Type.StringType - binding 'dasas' to parameter: 8
+2020-01-12 16:37:42,957 DEBUG NHibernate.Type.Int32Type - binding '1006' to parameter: 9
+2020-01-12 16:37:42,958 DEBUG NHibernate.AdoNet.AbstractBatcher - Adding to batch:UPDATE Users SET FirstName = @p0, SecondName = @p1, Password = @p2, Age = @p3, DriverLicense = @p4, IsDeleted = @p5, PhoneNumber = @p6, RoleId = @p7, Email = @p8 WHERE Id = @p9;@p0 = 'dsadsa' [Type: String (4000:0:0)], @p1 = 'dasdas' [Type: String (4000:0:0)], @p2 = '5250b70a85a1812e9384e99eaf15ed9c' [Type: String (4000:0:0)], @p3 = 62 [Type: Int32 (0:0:0)], @p4 = True [Type: Boolean (0:0:0)], @p5 = False [Type: Boolean (0:0:0)], @p6 = 'dasdas' [Type: String (4000:0:0)], @p7 = 1 [Type: Int32 (0:0:0)], @p8 = 'dasas' [Type: String (4000:0:0)], @p9 = 1006 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,960 DEBUG NHibernate.AdoNet.AbstractBatcher - Executing batch
+2020-01-12 16:37:42,961 DEBUG NHibernate.Transaction.AdoTransaction - Enlist Command
+2020-01-12 16:37:42,961 DEBUG NHibernate.SQL - Batch commands:
+command 0:UPDATE Users SET FirstName = @p0, SecondName = @p1, Password = @p2, Age = @p3, DriverLicense = @p4, IsDeleted = @p5, PhoneNumber = @p6, RoleId = @p7, Email = @p8 WHERE Id = @p9;@p0 = 'dsadsa' [Type: String (4000:0:0)], @p1 = 'dasdas' [Type: String (4000:0:0)], @p2 = '5250b70a85a1812e9384e99eaf15ed9c' [Type: String (4000:0:0)], @p3 = 62 [Type: Int32 (0:0:0)], @p4 = True [Type: Boolean (0:0:0)], @p5 = False [Type: Boolean (0:0:0)], @p6 = 'dasdas' [Type: String (4000:0:0)], @p7 = 1 [Type: Int32 (0:0:0)], @p8 = 'dasas' [Type: String (4000:0:0)], @p9 = 1006 [Type: Int32 (0:0:0)]
+
+2020-01-12 16:37:42,963 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteBatch for 1 statements took 3 ms
+2020-01-12 16:37:42,963 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,964 DEBUG NHibernate.AdoNet.ConnectionManager - Registering flush end
+2020-01-12 16:37:42,965 DEBUG NHibernate.Event.Default.AbstractFlushingEventListener - post flush
+2020-01-12 16:37:42,967 DEBUG NHibernate.Transaction.AdoTransaction - DbTransaction Committed
+2020-01-12 16:37:42,967 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,967 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,967 DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2020-01-12 16:37:42,967 DEBUG NHibernate.Transaction.AdoTransaction - DbTransaction disposed.
+2020-01-12 16:37:42,968 DEBUG NHibernate.Impl.SessionImpl - [session-id=362b87db-b57b-4c06-82c1-73edf01f6f59] running ISession.Dispose()
+2020-01-12 16:37:42,968 DEBUG NHibernate.Impl.SessionImpl - [session-id=362b87db-b57b-4c06-82c1-73edf01f6f59] executing real Dispose(True)
+2020-01-12 16:37:42,968 DEBUG NHibernate.Impl.SessionImpl - closing session
+2020-01-12 16:37:42,968 DEBUG NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+2020-01-12 16:37:42,974 DEBUG NHibernate.Impl.SessionFactoryImpl+SessionBuilderImpl`1[[NHibernate.ISessionBuilder, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4]] - Opening Hibernate Session.
+2020-01-12 16:37:42,974 DEBUG NHibernate.Impl.SessionImpl - [session-id=b8410260-a953-4d39-95ed-9f89211a26fd] opened session at timestamp: 637144438629, for session factory: [/8babe7443140408abd033a2abe2e1cb9]
+2020-01-12 16:37:42,974 DEBUG NHibernate.Linq - Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[RentCar.Entities.User])
+2020-01-12 16:37:42,974 DEBUG NHibernate.Engine.Query.QueryPlanCache - located HQL query plan in cache (NHibernate.Linq.NhQueryable`1[RentCar.Entities.User])
+2020-01-12 16:37:42,975 DEBUG NHibernate.Engine.Query.QueryPlanCache - located HQL query plan in cache (NHibernate.Linq.NhQueryable`1[RentCar.Entities.User])
+2020-01-12 16:37:42,975 DEBUG NHibernate.Engine.Query.HQLQueryPlan - find: NHibernate.Linq.NhQueryable`1[RentCar.Entities.User]
+2020-01-12 16:37:42,975 DEBUG NHibernate.Engine.QueryParameters - named parameters: {}
+2020-01-12 16:37:42,975 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,975 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: select user0_.Id as id1_3_, user0_.FirstName as firstname2_3_, user0_.SecondName as secondname3_3_, user0_.Password as password4_3_, user0_.Age as age5_3_, user0_.DriverLicense as driverlicense6_3_, user0_.IsDeleted as isdeleted7_3_, user0_.PhoneNumber as phonenumber8_3_, user0_.RoleId as roleid9_3_, user0_.Email as email10_3_ from Users user0_
+2020-01-12 16:37:42,975 DEBUG NHibernate.SQL - select user0_.Id as id1_3_, user0_.FirstName as firstname2_3_, user0_.SecondName as secondname3_3_, user0_.Password as password4_3_, user0_.Age as age5_3_, user0_.DriverLicense as driverlicense6_3_, user0_.IsDeleted as isdeleted7_3_, user0_.PhoneNumber as phonenumber8_3_, user0_.RoleId as roleid9_3_, user0_.Email as email10_3_ from Users user0_
+2020-01-12 16:37:42,975 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,975 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,976 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - result set row: 0
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.Int32Type - returning '1' as column: id1_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.User#1]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.User#1]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.User#1]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning 'Selim' as column: firstname2_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning 'Akbaci' as column: secondname3_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning '8a0acddd08764f37c106c971b0478799' as column: password4_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.Int32Type - returning '25' as column: age5_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.BooleanType - returning 'True' as column: driverlicense6_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted7_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning '05422297547' as column: phonenumber8_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.Int32Type - returning '1' as column: roleid9_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning 'selim.akbaci@gmail.com' as column: email10_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - result set row: 1
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.Int32Type - returning '2' as column: id1_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.User#2]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.User#2]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.User#2]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning 'osman' as column: firstname2_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning 'akbaci' as column: secondname3_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning '1b0c2c7af9f8034cc8c49b5b925f51db' as column: password4_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.Int32Type - returning '28' as column: age5_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.BooleanType - returning 'True' as column: driverlicense6_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted7_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning '44564' as column: phonenumber8_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.Int32Type - returning '2' as column: roleid9_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning 'akbacosman@gmail.com' as column: email10_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - result set row: 2
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.Int32Type - returning '3' as column: id1_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.User#3]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.User#3]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.User#3]
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning 'Yunus' as column: firstname2_3_
+2020-01-12 16:37:42,976 DEBUG NHibernate.Type.StringType - returning 'Akbaci' as column: secondname3_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning '8a0acddd08764f37c106c971b0478799' as column: password4_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '23' as column: age5_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.BooleanType - returning 'True' as column: driverlicense6_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted7_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning '054356856552' as column: phonenumber8_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '1' as column: roleid9_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'yunus.akbaci@gmail.com' as column: email10_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - result set row: 3
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '4' as column: id1_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.User#4]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.User#4]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.User#4]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'Depika' as column: firstname2_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'Padukone' as column: secondname3_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning '05355632580' as column: password4_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '27' as column: age5_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.BooleanType - returning 'True' as column: driverlicense6_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted7_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning '214568222565' as column: phonenumber8_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '1' as column: roleid9_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'depika.padukone@gmail.com' as column: email10_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - result set row: 4
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '1006' as column: id1_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.User#1006]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'dsadsa' as column: firstname2_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'dasdas' as column: secondname3_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning '5250b70a85a1812e9384e99eaf15ed9c' as column: password4_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '62' as column: age5_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.BooleanType - returning 'True' as column: driverlicense6_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted7_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'dasdas' as column: phonenumber8_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '1' as column: roleid9_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'dasas' as column: email10_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - result set row: 5
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '2004' as column: id1_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.User#2004]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.User#2004]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.User#2004]
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'fsd' as column: firstname2_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'fsdf' as column: secondname3_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning '621eb4bb78f6f579e811c9b2453bdd15' as column: password4_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.Int32Type - returning '25' as column: age5_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.BooleanType - returning 'True' as column: driverlicense6_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted7_3_
+2020-01-12 16:37:42,977 DEBUG NHibernate.Type.StringType - returning 'fsf' as column: phonenumber8_3_
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.Int32Type - returning '1' as column: roleid9_3_
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.StringType - returning 'fsd' as column: email10_3_
+2020-01-12 16:37:42,978 DEBUG NHibernate.Loader.Loader - done processing result set (6 rows)
+2020-01-12 16:37:42,978 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,978 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 2 ms
+2020-01-12 16:37:42,978 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,978 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,978 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,978 DEBUG NHibernate.Loader.Loader - total objects hydrated: 6
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.User#1]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Orders#1]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Cards#1]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.User#1]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.User#2]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Orders#2]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Cards#2]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.User#2]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.User#3]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Orders#3]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Cards#3]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.User#3]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.User#4]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Orders#4]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Cards#4]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.User#4]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Cards#1006]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.User#1006]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.User#2004]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Orders#2004]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.User.Cards#2004]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.User#2004]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+2020-01-12 16:37:42,978 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Cards#2004]
+2020-01-12 16:37:42,978 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,978 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,978 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Cards#2004]
+2020-01-12 16:37:42,978 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,978 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=?
+2020-01-12 16:37:42,978 DEBUG NHibernate.Type.Int32Type - binding '2004' to parameter: 0
+2020-01-12 16:37:42,978 DEBUG NHibernate.SQL - SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=@p0;@p0 = 2004 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,979 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,979 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,979 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,979 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Cards#2004]
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Cards#2004]]
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,979 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,979 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,979 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,979 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,979 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,979 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,979 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,979 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#2004]] in any result-set context
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#2004]] not located in load context
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#2004]>@33f1b47]
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#2004]>@33f1b47]
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Cards#2004]
+2020-01-12 16:37:42,979 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,979 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,979 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,979 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Orders#2004]
+2020-01-12 16:37:42,979 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,979 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,979 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Orders#2004]
+2020-01-12 16:37:42,979 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,980 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=?
+2020-01-12 16:37:42,980 DEBUG NHibernate.Type.Int32Type - binding '2004' to parameter: 0
+2020-01-12 16:37:42,980 DEBUG NHibernate.SQL - SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=@p0;@p0 = 2004 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,980 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,980 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,980 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,980 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Orders#2004]
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Orders#2004]]
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#2004]] in any result-set context
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#2004]] located in load context
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,980 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,980 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,980 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,980 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,980 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,980 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,980 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,980 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#2004]] in any result-set context
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#2004]] not located in load context
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#2004]>@9c475]
+2020-01-12 16:37:42,980 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,981 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#2004]>@9c475]
+2020-01-12 16:37:42,981 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Orders#2004]
+2020-01-12 16:37:42,981 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,981 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,981 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,981 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Cards#1006]
+2020-01-12 16:37:42,981 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,981 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,981 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Cards#1006]
+2020-01-12 16:37:42,981 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,981 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=?
+2020-01-12 16:37:42,981 DEBUG NHibernate.Type.Int32Type - binding '1006' to parameter: 0
+2020-01-12 16:37:42,981 DEBUG NHibernate.SQL - SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=@p0;@p0 = 1006 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,981 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,981 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,981 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,981 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Cards#1006]
+2020-01-12 16:37:42,981 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,981 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Cards#1006]]
+2020-01-12 16:37:42,981 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#1006]] in any result-set context
+2020-01-12 16:37:42,981 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#1006]] located in load context
+2020-01-12 16:37:42,981 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,981 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,981 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,982 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,982 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,982 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,982 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,982 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,982 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,982 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#1006]] in any result-set context
+2020-01-12 16:37:42,982 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#1006]] not located in load context
+2020-01-12 16:37:42,982 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#1006]>@33a9c6b]
+2020-01-12 16:37:42,982 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,982 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#1006]>@33a9c6b]
+2020-01-12 16:37:42,982 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Cards#1006]
+2020-01-12 16:37:42,982 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,982 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,982 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,982 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,982 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,982 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,982 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,982 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,982 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=?
+2020-01-12 16:37:42,982 DEBUG NHibernate.Type.Int32Type - binding '1006' to parameter: 0
+2020-01-12 16:37:42,982 DEBUG NHibernate.SQL - SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=@p0;@p0 = 1006 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,982 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,982 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,983 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,983 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Orders#1006]]
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#1006]] in any result-set context
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#1006]] located in load context
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,983 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,983 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,983 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,983 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,983 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,983 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,983 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,983 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#1006]] in any result-set context
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#1006]] not located in load context
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#1006]>@2140d97]
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#1006]>@2140d97]
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Orders#1006]
+2020-01-12 16:37:42,983 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,983 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,983 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,983 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Cards#4]
+2020-01-12 16:37:42,983 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,983 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,983 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Cards#4]
+2020-01-12 16:37:42,983 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,983 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=?
+2020-01-12 16:37:42,983 DEBUG NHibernate.Type.Int32Type - binding '4' to parameter: 0
+2020-01-12 16:37:42,983 DEBUG NHibernate.SQL - SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=@p0;@p0 = 4 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,983 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,984 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,984 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,984 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Cards#4]
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Cards#4]]
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#4]] in any result-set context
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#4]] located in load context
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,984 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,984 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,984 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,984 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,984 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,984 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,984 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,984 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#4]] in any result-set context
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#4]] not located in load context
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#4]>@1d3096b]
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#4]>@1d3096b]
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Cards#4]
+2020-01-12 16:37:42,984 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,984 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,984 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,984 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Orders#4]
+2020-01-12 16:37:42,984 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,984 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,984 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Orders#4]
+2020-01-12 16:37:42,984 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,984 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=?
+2020-01-12 16:37:42,984 DEBUG NHibernate.Type.Int32Type - binding '4' to parameter: 0
+2020-01-12 16:37:42,984 DEBUG NHibernate.SQL - SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=@p0;@p0 = 4 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,985 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,985 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,985 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,985 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Orders#4]
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Orders#4]]
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#4]] in any result-set context
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#4]] located in load context
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,985 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,985 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,985 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,985 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,985 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,985 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,985 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,985 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#4]] in any result-set context
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#4]] not located in load context
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#4]>@2557855]
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#4]>@2557855]
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Orders#4]
+2020-01-12 16:37:42,985 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,985 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,985 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,985 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Cards#3]
+2020-01-12 16:37:42,985 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,985 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,985 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Cards#3]
+2020-01-12 16:37:42,985 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,985 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=?
+2020-01-12 16:37:42,985 DEBUG NHibernate.Type.Int32Type - binding '3' to parameter: 0
+2020-01-12 16:37:42,985 DEBUG NHibernate.SQL - SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=@p0;@p0 = 3 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,986 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,986 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,986 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,986 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Cards#3]
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Cards#3]]
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#3]] in any result-set context
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#3]] located in load context
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,986 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,986 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,986 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,986 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,986 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,986 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,986 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,986 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#3]] in any result-set context
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#3]] not located in load context
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#3]>@307a9c7]
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#3]>@307a9c7]
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Cards#3]
+2020-01-12 16:37:42,986 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,986 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,986 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,986 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Orders#3]
+2020-01-12 16:37:42,986 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,986 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,986 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Orders#3]
+2020-01-12 16:37:42,987 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,987 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=?
+2020-01-12 16:37:42,987 DEBUG NHibernate.Type.Int32Type - binding '3' to parameter: 0
+2020-01-12 16:37:42,987 DEBUG NHibernate.SQL - SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=@p0;@p0 = 3 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,987 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,987 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,987 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,987 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Orders#3]
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Orders#3]]
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#3]] in any result-set context
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#3]] located in load context
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,987 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,987 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,987 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,987 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,987 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,987 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,987 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,987 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#3]] in any result-set context
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#3]] not located in load context
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#3]>@88c42f]
+2020-01-12 16:37:42,987 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,988 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#3]>@88c42f]
+2020-01-12 16:37:42,988 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Orders#3]
+2020-01-12 16:37:42,988 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,988 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,988 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,988 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Cards#2]
+2020-01-12 16:37:42,988 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,988 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,988 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Cards#2]
+2020-01-12 16:37:42,988 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,988 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=?
+2020-01-12 16:37:42,988 DEBUG NHibernate.Type.Int32Type - binding '2' to parameter: 0
+2020-01-12 16:37:42,988 DEBUG NHibernate.SQL - SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=@p0;@p0 = 2 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,988 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,988 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,988 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,988 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Cards#2]
+2020-01-12 16:37:42,988 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,988 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Cards#2]]
+2020-01-12 16:37:42,988 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#2]] in any result-set context
+2020-01-12 16:37:42,988 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#2]] located in load context
+2020-01-12 16:37:42,988 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,988 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,988 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,988 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,988 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,989 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,989 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,989 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,989 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#2]] in any result-set context
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#2]] not located in load context
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#2]>@7634fe]
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#2]>@7634fe]
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Cards#2]
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,989 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,989 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,989 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Orders#2]
+2020-01-12 16:37:42,989 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,989 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,989 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Orders#2]
+2020-01-12 16:37:42,989 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,989 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=?
+2020-01-12 16:37:42,989 DEBUG NHibernate.Type.Int32Type - binding '2' to parameter: 0
+2020-01-12 16:37:42,989 DEBUG NHibernate.SQL - SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=@p0;@p0 = 2 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,989 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,989 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,989 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,989 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Orders#2]
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Orders#2]]
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#2]] in any result-set context
+2020-01-12 16:37:42,989 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#2]] located in load context
+2020-01-12 16:37:42,990 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,990 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,990 DEBUG NHibernate.Loader.Loader - done processing result set (0 rows)
+2020-01-12 16:37:42,990 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,990 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,990 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,990 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,990 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,990 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,990 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#2]] in any result-set context
+2020-01-12 16:37:42,990 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#2]] not located in load context
+2020-01-12 16:37:42,990 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#2]>@3ce20a5]
+2020-01-12 16:37:42,990 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,990 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#2]>@3ce20a5]
+2020-01-12 16:37:42,990 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Orders#2]
+2020-01-12 16:37:42,990 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,990 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,990 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,990 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Cards#1]
+2020-01-12 16:37:42,990 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,990 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,990 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Cards#1]
+2020-01-12 16:37:42,990 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,990 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=?
+2020-01-12 16:37:42,990 DEBUG NHibernate.Type.Int32Type - binding '1' to parameter: 0
+2020-01-12 16:37:42,990 DEBUG NHibernate.SQL - SELECT cards0_.UserId as userid5_2_1_, cards0_.Id as id1_2_1_, cards0_.Id as id1_2_0_, cards0_.Limit as limit2_2_0_, cards0_.CardName as cardname3_2_0_, cards0_.IsDeleted as isdeleted4_2_0_, cards0_.UserId as userid5_2_0_ FROM Cards cards0_ WHERE cards0_.UserId=@p0;@p0 = 1 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,990 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,991 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,991 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Cards#1]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Cards#1]]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#1]] in any result-set context
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#1]] located in load context
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - result set row: 0
+2020-01-12 16:37:42,991 DEBUG NHibernate.Type.Int32Type - returning '1002' as column: id1_2_0_
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.CreditCard#1002]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.CreditCard#1002]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.CreditCard#1002]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Type.DoubleType - returning '1200' as column: limit2_2_0_
+2020-01-12 16:37:42,991 DEBUG NHibernate.Type.StringType - returning 'Garanti' as column: cardname3_2_0_
+2020-01-12 16:37:42,991 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted4_2_0_
+2020-01-12 16:37:42,991 DEBUG NHibernate.Type.Int32Type - returning '1' as column: userid5_2_0_
+2020-01-12 16:37:42,991 DEBUG NHibernate.Type.Int32Type - returning '1' as column: userid5_2_1_
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - found row of collection: [RentCar.Entities.User.Cards#1]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Cards#1]]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#1]] in any result-set context
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#1]] not located in load context
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+2020-01-12 16:37:42,991 DEBUG NHibernate.Type.Int32Type - returning '1002' as column: id1_2_1_
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [RentCar.Entities.CreditCard#1002]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [RentCar.Entities.CreditCard#1002]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [RentCar.Entities.CreditCard#1002]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
+2020-01-12 16:37:42,991 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,991 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,991 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,991 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,991 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - total objects hydrated: 1
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.CreditCard#1002]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [RentCar.Entities.User#1]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [RentCar.Entities.User#1]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [RentCar.Entities.User#1]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.CreditCard#1002]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Cards#1]] in any result-set context
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Cards#1]] not located in load context
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#1]>@29d03cc]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Cards#1]>@29d03cc]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Cards#1]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Cards
+2020-01-12 16:37:42,991 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.User.Orders#1]
+2020-01-12 16:37:42,991 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,992 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,992 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.User.Orders#1]
+2020-01-12 16:37:42,992 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,992 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=?
+2020-01-12 16:37:42,992 DEBUG NHibernate.Type.Int32Type - binding '1' to parameter: 0
+2020-01-12 16:37:42,992 DEBUG NHibernate.SQL - SELECT orders0_.UserId as userid5_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.UserId=@p0;@p0 = 1 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,992 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,992 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,992 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,992 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.User.Orders#1]
+2020-01-12 16:37:42,992 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,992 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Orders#1]]
+2020-01-12 16:37:42,992 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#1]] in any result-set context
+2020-01-12 16:37:42,992 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#1]] located in load context
+2020-01-12 16:37:42,992 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,992 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,992 DEBUG NHibernate.Loader.Loader - result set row: 0
+2020-01-12 16:37:42,992 DEBUG NHibernate.Type.Int32Type - returning '1002' as column: id1_1_0_
+2020-01-12 16:37:42,993 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Type.DateTimeType - returning '13.01.2020 00:00:00' as column: startdate2_1_0_
+2020-01-12 16:37:42,993 DEBUG NHibernate.Type.DateTimeType - returning '15.01.2020 00:00:00' as column: enddate3_1_0_
+2020-01-12 16:37:42,993 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted4_1_0_
+2020-01-12 16:37:42,993 DEBUG NHibernate.Type.Int32Type - returning '1' as column: userid5_1_0_
+2020-01-12 16:37:42,993 DEBUG NHibernate.Type.Int32Type - returning '1' as column: carid6_1_0_
+2020-01-12 16:37:42,993 DEBUG NHibernate.Type.Int32Type - returning '1' as column: userid5_1_1_
+2020-01-12 16:37:42,993 DEBUG NHibernate.Loader.Loader - found row of collection: [RentCar.Entities.User.Orders#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.User.Orders#1]]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#1]] in any result-set context
+2020-01-12 16:37:42,993 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#1]] not located in load context
+2020-01-12 16:37:42,993 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+2020-01-12 16:37:42,993 DEBUG NHibernate.Type.Int32Type - returning '1002' as column: id1_1_1_
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
+2020-01-12 16:37:42,993 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,993 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,993 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,993 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,993 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,993 DEBUG NHibernate.Loader.Loader - total objects hydrated: 1
+2020-01-12 16:37:42,993 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [RentCar.Entities.User#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [RentCar.Entities.User#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [RentCar.Entities.User#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - object not resolved in any cache: [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Fetching entity: [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Loader.Loader - loading entity: [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,993 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,993 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT car0_.Id as id1_0_0_, car0_.Brand as brand2_0_0_, car0_.Photo as photo3_0_0_, car0_.Available as available4_0_0_, car0_.Price as price5_0_0_, car0_.IsDeleted as isdeleted6_0_0_, car0_.City as city7_0_0_, car0_.Disrict as disrict8_0_0_ FROM Cars car0_ WHERE car0_.Id=?
+2020-01-12 16:37:42,993 DEBUG NHibernate.Type.Int32Type - binding '1' to parameter: 0
+2020-01-12 16:37:42,993 DEBUG NHibernate.SQL - SELECT car0_.Id as id1_0_0_, car0_.Brand as brand2_0_0_, car0_.Photo as photo3_0_0_, car0_.Available as available4_0_0_, car0_.Price as price5_0_0_, car0_.IsDeleted as isdeleted6_0_0_, car0_.City as city7_0_0_, car0_.Disrict as disrict8_0_0_ FROM Cars car0_ WHERE car0_.Id=@p0;@p0 = 1 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,993 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,994 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,994 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,994 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,994 DEBUG NHibernate.Loader.Loader - result set row: 0
+2020-01-12 16:37:42,994 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.Car#1]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Type.StringType - returning 'BMW' as column: brand2_0_0_
+2020-01-12 16:37:42,994 DEBUG NHibernate.Type.StringType - returning 'cad6af6d-4adc-4da2-aa3c-7b461b5727fcm_modern.jpg' as column: photo3_0_0_
+2020-01-12 16:37:42,994 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: available4_0_0_
+2020-01-12 16:37:42,994 DEBUG NHibernate.Type.DoubleType - returning '200' as column: price5_0_0_
+2020-01-12 16:37:42,994 DEBUG NHibernate.Type.BooleanType - returning 'False' as column: isdeleted6_0_0_
+2020-01-12 16:37:42,994 DEBUG NHibernate.Type.StringType - returning 'Istanbul' as column: city7_0_0_
+2020-01-12 16:37:42,994 DEBUG NHibernate.Type.StringType - returning 'Pendik' as column: disrict8_0_0_
+2020-01-12 16:37:42,994 DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
+2020-01-12 16:37:42,994 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,994 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,994 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,994 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,994 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,994 DEBUG NHibernate.Loader.Loader - total objects hydrated: 1
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.Car.Orders#1]] in any result-set context
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.Car.Orders#1]] located in load context
+2020-01-12 16:37:42,994 DEBUG NHibernate.Type.CollectionType - Created collection wrapper: [RentCar.Entities.Car.Orders#1]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.Car#1]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Loader.Loader - done entity load
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.User.Orders#1]] in any result-set context
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.User.Orders#1]] not located in load context
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#1]>@13e8e13]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.User.Orders#1]>@13e8e13]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.User.Orders#1]
+2020-01-12 16:37:42,994 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.User.Orders
+2020-01-12 16:37:42,994 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,994 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,995 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [RentCar.Entities.Car.Orders#1]
+2020-01-12 16:37:42,995 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+2020-01-12 16:37:42,995 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+2020-01-12 16:37:42,995 DEBUG NHibernate.Loader.Loader - loading collection: [RentCar.Entities.Car.Orders#1]
+2020-01-12 16:37:42,995 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-01-12 16:37:42,995 DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT orders0_.CarId as carid6_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.CarId=?
+2020-01-12 16:37:42,995 DEBUG NHibernate.Type.Int32Type - binding '1' to parameter: 0
+2020-01-12 16:37:42,995 DEBUG NHibernate.SQL - SELECT orders0_.CarId as carid6_1_1_, orders0_.Id as id1_1_1_, orders0_.Id as id1_1_0_, orders0_.StartDate as startdate2_1_0_, orders0_.EndDate as enddate3_1_0_, orders0_.IsDeleted as isdeleted4_1_0_, orders0_.UserId as userid5_1_0_, orders0_.CarId as carid6_1_0_ FROM Orders orders0_ WHERE orders0_.CarId=@p0;@p0 = 1 [Type: Int32 (0:0:0)]
+2020-01-12 16:37:42,995 DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-01-12 16:37:42,995 DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-01-12 16:37:42,995 DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-01-12 16:37:42,995 DEBUG NHibernate.Loader.Loader - result set contains (possibly empty) collection: [RentCar.Entities.Car.Orders#1]
+2020-01-12 16:37:42,995 DEBUG NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+2020-01-12 16:37:42,995 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.Car.Orders#1]]
+2020-01-12 16:37:42,995 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.Car.Orders#1]] in any result-set context
+2020-01-12 16:37:42,995 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.Car.Orders#1]] located in load context
+2020-01-12 16:37:42,995 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+2020-01-12 16:37:42,995 DEBUG NHibernate.Loader.Loader - processing result set
+2020-01-12 16:37:42,995 DEBUG NHibernate.Loader.Loader - result set row: 0
+2020-01-12 16:37:42,995 DEBUG NHibernate.Type.Int32Type - returning '1002' as column: id1_1_0_
+2020-01-12 16:37:42,995 DEBUG NHibernate.Loader.Loader - result row: EntityKey[RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Type.Int32Type - returning '1' as column: carid6_1_1_
+2020-01-12 16:37:42,996 DEBUG NHibernate.Loader.Loader - found row of collection: [RentCar.Entities.Car.Orders#1]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[RentCar.Entities.Car.Orders#1]]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.Car.Orders#1]] in any result-set context
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.Car.Orders#1]] not located in load context
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+2020-01-12 16:37:42,996 DEBUG NHibernate.Type.Int32Type - returning '1002' as column: id1_1_1_
+2020-01-12 16:37:42,996 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [RentCar.Entities.Order#1002]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
+2020-01-12 16:37:42,996 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-01-12 16:37:42,996 DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+2020-01-12 16:37:42,996 DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-01-12 16:37:42,996 DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-01-12 16:37:42,996 DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-01-12 16:37:42,996 DEBUG NHibernate.Loader.Loader - total objects hydrated: 0
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[RentCar.Entities.Car.Orders#1]] in any result-set context
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[RentCar.Entities.Car.Orders#1]] not located in load context
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.Car.Orders#1]>@2dbd898]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: RentCar.Entities.Car.Orders
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[RentCar.Entities.Car.Orders#1]>@2dbd898]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [RentCar.Entities.Car.Orders#1]
+2020-01-12 16:37:42,996 DEBUG NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: RentCar.Entities.Car.Orders
+2020-01-12 16:37:42,996 DEBUG NHibernate.Loader.Loader - done loading collection
+2020-01-12 16:37:42,996 DEBUG NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+2020-01-12 16:37:42,996 DEBUG NHibernate.AdoNet.ConnectionManager - After autocommit
+2020-01-12 16:37:42,996 DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2020-01-12 16:37:42,996 DEBUG NHibernate.Impl.SessionImpl - [session-id=b8410260-a953-4d39-95ed-9f89211a26fd] running ISession.Dispose()
+2020-01-12 16:37:42,996 DEBUG NHibernate.Impl.SessionImpl - [session-id=b8410260-a953-4d39-95ed-9f89211a26fd] executing real Dispose(True)
+2020-01-12 16:37:42,996 DEBUG NHibernate.Impl.SessionImpl - closing session
+2020-01-12 16:37:42,996 DEBUG NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)

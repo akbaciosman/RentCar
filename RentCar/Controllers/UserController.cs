@@ -1,4 +1,5 @@
-﻿using RentCar.DataAccess;
+﻿using RentCar.Core;
+using RentCar.DataAccess;
 using RentCar.Entities;
 using RentCar.Models.Abstract;
 using System;
@@ -34,6 +35,7 @@ namespace RentCar.Models
             // GET: User/Details/5
             public ActionResult Details(int id)
         {
+            
             var user = _userService.GetById(id);
             return View(user);
         }
@@ -55,8 +57,12 @@ namespace RentCar.Models
                 _userService.Add(user);
                 return RedirectToAction("Index");
             }
-            catch
+            catch(Exception msg)
             {
+                Logger.GetLogger().Error("User can not create", msg); ;
+
+
+
                 return View();
             }
         }
@@ -64,7 +70,13 @@ namespace RentCar.Models
         // GET: User/Edit/5
         public ActionResult Edit(int id)
         {
-            var user = _userService.GetById(id);
+            
+            string[] userTemp = Session["LoginedUser"].ToString().Split(',');
+            if (id.ToString()==null)
+                id = int.Parse(userTemp[0]);
+          
+           var user = _userService.GetById(id);
+            Logger.GetLogger().Info(user.FirstName + " information is updated");
             return View(user);
         }
 
@@ -85,8 +97,9 @@ namespace RentCar.Models
                 _userService.Update(_user);
                 return RedirectToAction("Index");
             }
-            catch
+            catch(Exception err)
             {
+                Logger.GetLogger().Error("User can not be updated", err);
                 return View();
             }
         }
@@ -108,8 +121,40 @@ namespace RentCar.Models
                 _userService.Delete(id);
                 return RedirectToAction("Index");
             }
-            catch
+            catch(Exception err)
             {
+                Logger.GetLogger().Error("User can not be deleted!!", err);
+                return View();
+            }
+        }
+
+
+        // GET: User/Edit/5
+        public ActionResult ChangePassword(int id)
+        {
+
+            string[] userTemp = Session["LoginedUser"].ToString().Split(',');
+            if (id.ToString() == null)
+                id = int.Parse(userTemp[0]);
+
+            var user = _userService.GetById(id);
+            return View(user);
+        }
+
+        // POST: User/Edit/5
+        [HttpPost]
+        public ActionResult ChangePassword(int id, User user)
+        {
+            try
+            {
+                User _user = _userService.GetById(id);
+                _user.Password = _userService.GetMD5(user.Password);
+                _userService.Update(_user);
+                return RedirectToAction("Index");
+            }
+            catch(Exception err)
+            {
+                Logger.GetLogger().Error("Password Can't be changed!!", err);
                 return View();
             }
         }

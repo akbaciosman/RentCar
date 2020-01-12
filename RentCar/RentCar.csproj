@@ -60,6 +60,9 @@
     <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\NHibernate.5.1.1\lib\net461\NHibernate.dll</HintPath>
@@ -166,6 +169,7 @@
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Core\Abstract\IEntityRepository.cs" />
     <Compile Include="Core\FluentNHibernate\FleuntNhibernateRepository.cs" />
+    <Compile Include="Core\Logger.cs" />
     <Compile Include="DataAccess\Abstract\ICarDal.cs" />
     <Compile Include="DataAccess\Abstract\ICreditCardDal.cs" />
     <Compile Include="DataAccess\Abstract\IOrderDal.cs" />
@@ -264,10 +268,13 @@
     <Content Include="Views\CreditCard\Create.cshtml" />
     <Content Include="Views\CreditCard\Edit.cshtml" />
     <Content Include="Views\CreditCard\Delete.cshtml" />
+    <Content Include="Views\User\ChangePassword.cshtml" />
+    <Content Include="Views\Shared\_NavbarMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="img\" />
+    <Folder Include="Logs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

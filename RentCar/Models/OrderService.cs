@@ -31,6 +31,8 @@ namespace RentCar.Models
 
                 if (_car.Available && !_car.IsDeleted)
                 {
+                    if(_user.Cards.Count<1)
+                        throw new Exception("You cant rent this, please add your creditCard!!");
                     if (_user.Cards[0].Limit > _car.Price)
                     {
                         _user.Cards[0].Limit -= _car.Price; 

@@ -52,6 +52,7 @@ C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Autofac.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Autofac.Integration.Mvc.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\FluentNHibernate.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Iesi.Collections.dll
+C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\log4net.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Microsoft.Web.Infrastructure.dll
@@ -77,6 +78,7 @@ C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Autofac.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Autofac.Integration.Mvc.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\FluentNHibernate.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Iesi.Collections.xml
+C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\log4net.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\NHibernate.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Remotion.Linq.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\bin\Remotion.Linq.EagerFetching.xml

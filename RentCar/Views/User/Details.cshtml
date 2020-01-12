@@ -77,7 +77,14 @@
 
     </dl>
 </div>
+@{
+    
+    string[] userTemp = Session["LoginedUser"].ToString().Split(',');
+}
 <p>
     @Html.ActionLink("Edit", "Edit", new {  id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @if (int.Parse(userTemp[1]) == 2)
+    {
+     @Html.ActionLink("Back to List", "Index");
+    }
 </p>

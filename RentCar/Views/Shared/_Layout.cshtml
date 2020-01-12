@@ -15,19 +15,10 @@
         Response.Redirect("/Login/Login");
         return;
     }
-}
-@{
-    if (int.Parse(userTemp[1]) == 1)
-    {
-        @Html.Partial("~/Views/Shared/_PartialCustomerView.cshtml"@*,Model*@);
 
-    }
-    else if (int.Parse(userTemp[1]) == 2)
-    {
-        @Html.Partial("~/Views/Shared/_PartialAdminView.cshtml"@*,Model*@)
-    }
-
+    string name = userTemp[2];
 }
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,6 +29,18 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body style="overflow:scroll;">
+    @{
+        if (int.Parse(userTemp[1]) == 1)
+        {
+            @Html.Partial("~/Views/Shared/_PartialCustomerView.cshtml"@*,Model*@);
+
+        }
+        else if (int.Parse(userTemp[1]) == 2)
+        {
+            @Html.Partial("~/Views/Shared/_PartialAdminView.cshtml"@*,Model*@)
+        }
+
+    }
     <div class="container body-content">
         @RenderBody()
         <hr />

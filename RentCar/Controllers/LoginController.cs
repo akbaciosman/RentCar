@@ -1,6 +1,8 @@
-﻿using RentCar.Entities;
+﻿using RentCar.Core;
+using RentCar.Entities;
 using RentCar.Entities.HelperConrete;
 using RentCar.Models.Abstract;
+using System.Net;
 using System.Web.Mvc;
 
 namespace RentCar.Controllers
@@ -34,14 +36,29 @@ namespace RentCar.Controllers
                     string fullname = user.FirstName + "  " + user.SecondName;
                     string str = user.Id + "," + user.RoleId + "," + fullname;
                     Session["LoginedUser"] = str;
-                    
+
+                    Logger.GetLogger().Info(fullname + "Loginned to application");
                     return RedirectToAction(actionName: "Index", controllerName: "Home");
                 }
+                Logger.GetLogger().Error(" Username or Password invalid");
                 ModelState.AddModelError("", "Username or Password invalid!!!");
                 return View(loginView);
             }
+            Logger.GetLogger().Error( " Please fill the fields");
+
             ModelState.AddModelError("", "Please fill the fields!!!");
             return View(loginView);
+        }
+
+
+        [HttpPost]
+        public ActionResult LogOut()
+        {
+
+
+            Session["LoginedUser"] = null;
+            Session.Clear();
+            return RedirectToAction(actionName: "Index", controllerName: "Home");
         }
     }
 }
