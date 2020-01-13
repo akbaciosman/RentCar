@@ -1,0 +1,105 @@
+﻿@model RentCar.Entities.Order
+
+@{
+    ViewBag.Title = "Details";
+    string path = Model.Car.Photo;
+
+}
+
+@{ 
+    if (Session["LoginedUser"] == null)
+    {
+        Response.Redirect("/Login/Login");
+        return;
+    }
+    if (string.IsNullOrEmpty(Session["LoginedUser"].ToString()))
+    {
+        Response.Redirect("/Login/Login");
+        return;
+    }
+    string[] userTemp = Session["LoginedUser"].ToString().Split(',');
+    if (userTemp.Count() != 3)
+    {
+        Response.Redirect("/Login/Login");
+        return;
+    }
+
+}
+<h2>Details</h2>
+
+
+
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Car.Photo)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/img/"+path)" style="width:200px;height:200px;" alt="IMAGES" />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Car.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Car.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Car.Available)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Car.Available)
+        </dd>
+
+        @if (int.Parse(userTemp[1]) == 2)
+        {
+            <dt>
+                <label>Name</label>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.User.FirstName)
+            </dd>
+            <dt>
+                <label>Surname</label>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.User.SecondName)
+            </dd>
+        }
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

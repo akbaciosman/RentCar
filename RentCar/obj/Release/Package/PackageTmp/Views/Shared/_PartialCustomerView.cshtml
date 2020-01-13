@@ -1,0 +1,38 @@
+﻿@{
+   
+    string[] userTemp = Session["LoginedUser"].ToString().Split(',');
+    if (userTemp.Count() < 2)
+    {
+        Response.Redirect("/Login/Login");
+        return;
+    }
+
+    string name = userTemp[2];
+    int userId = int.Parse(userTemp[0]);
+}
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <img src="~/img/aa9cdf58-6c9f-49b9-9794-89ebeada3d92mustang_2.jpg" class="img-circle" height="50" width="50" />
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            @Html.ActionLink("Rent A Car", "Index", "Car", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Cars", "Index", "Car")</li>
+                <li>@Html.ActionLink("Orders", "Index", "Order")</li>
+                <li>@Html.ActionLink("CreditCard", "Index", "CreditCard")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+
+            @Html.Partial("~/Views/Shared/_NavbarMenu.cshtml"@*,Model*@);
+        </div>
+
+    </div>
+</div>
+

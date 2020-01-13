@@ -100,4 +100,3 @@ C:\Users\osman.akbaci\source\Test\RentCar\RentCar\obj\Debug\RentCar.csproj.CoreC
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\obj\Debug\RentCar.csproj.CopyComplete
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\obj\Debug\RentCar.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar\obj\Debug\RentCar.pdb
-C:\Users\osman.akbaci\source\Test\RentCar\RentCar\obj\Debug\RentCar.csprojAssemblyReference.cache

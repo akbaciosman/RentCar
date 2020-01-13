@@ -90,6 +90,7 @@ namespace RentCar.Controllers
                 Car _car = _carService.GetById(id);
 
                 _car.Price = car.Price;
+                _car.Brand = car.Brand;
                 _car.Available = car.Available;
                 _car.Address.City= car.Address.City;
                 _car.Address.Disrict = car.Address.Disrict;

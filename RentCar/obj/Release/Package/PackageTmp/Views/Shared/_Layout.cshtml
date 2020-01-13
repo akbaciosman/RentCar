@@ -1,0 +1,56 @@
+﻿@{
+    if (Session["LoginedUser"] == null)
+    {
+        Response.Redirect("/Login/Login");
+        return;
+    }
+    if (string.IsNullOrEmpty(Session["LoginedUser"].ToString()))
+    {
+        Response.Redirect("/Login/Login");
+        return;
+    }
+    string[] userTemp = Session["LoginedUser"].ToString().Split(',');
+    if (userTemp.Count() < 2)
+    {
+        Response.Redirect("/Login/Login");
+        return;
+    }
+
+    string name = userTemp[2];
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Rent A Car Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="overflow:scroll;">
+    @{
+        if (int.Parse(userTemp[1]) == 1)
+        {
+            @Html.Partial("~/Views/Shared/_PartialCustomerView.cshtml"@*,Model*@);
+
+        }
+        else if (int.Parse(userTemp[1]) == 2)
+        {
+            @Html.Partial("~/Views/Shared/_PartialAdminView.cshtml"@*,Model*@)
+        }
+
+    }
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Rent A Car Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

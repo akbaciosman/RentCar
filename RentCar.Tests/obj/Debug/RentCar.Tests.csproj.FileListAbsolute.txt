@@ -20,6 +20,7 @@ C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\System.Web.Htt
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\Autofac.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\NHibernate.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\FluentNHibernate.dll
+C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\log4net.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\Autofac.Integration.Mvc.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\Antlr3.Runtime.dll
@@ -41,6 +42,7 @@ C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\Autofac.pdb
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\Autofac.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\NHibernate.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\FluentNHibernate.xml
+C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\log4net.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\Autofac.Integration.Mvc.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\osman.akbaci\source\Test\RentCar\RentCar.Tests\bin\Debug\Antlr3.Runtime.xml

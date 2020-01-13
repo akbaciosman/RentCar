@@ -5,6 +5,7 @@ using RentCar.Models.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 
 namespace RentCar.Models
@@ -24,8 +25,6 @@ namespace RentCar.Models
         }
         public bool Add(Order Order)
         {
-            try
-            {
                 User _user = _userDal.Get(x => x.Id == Order.User.Id);
                 Car _car = _carDal.Get(x => x.Id == Order.Car.Id);
 
@@ -49,11 +48,7 @@ namespace RentCar.Models
                     throw new Exception("Related Car is not available for now!!!, Please choose new one");
                 }
                 return true;
-            }
-            catch (Exception msg)
-            {
-                throw new Exception("Can not order " + msg);
-            }
+            
         }
 
         public bool Delete(int id)
@@ -67,7 +62,7 @@ namespace RentCar.Models
             }
             catch (Exception)
             {
-                return false;
+                throw;
             }
         }
 
@@ -80,7 +75,7 @@ namespace RentCar.Models
             }
             catch (Exception msg)
             {
-                return null;
+                throw;
             }
             
         }

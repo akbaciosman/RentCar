@@ -54,8 +54,11 @@ namespace RentCar.Controllers
         [HttpPost]
         public ActionResult LogOut()
         {
+            string[] userTemp = Session["LoginedUser"].ToString().Split(',');
+            int _userid = int.Parse(userTemp[0]);
+            User user = _userService.GetById(_userid);
 
-
+            Logger.GetLogger().Info(user.FirstName + " " + user.SecondName+" is log out!!");
             Session["LoginedUser"] = null;
             Session.Clear();
             return RedirectToAction(actionName: "Index", controllerName: "Home");
